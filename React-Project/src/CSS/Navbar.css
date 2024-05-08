@@ -1,0 +1,72 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('https://t3.ftcdn.net/jpg/05/28/86/66/240_F_528866602_aiVwnOnkooTrqo3MgicCf83SVVzt1Gnd.jpg'); /* Sets the image as the background */
+    background-size: cover; /* Covers the entire navbar */
+    background-position: center; /* Centers the background image */
+    color: #e0e0e0; /* A softer white for better readability on darker backgrounds */
+    padding: 10px 20px;
+    height: 100px;
+    position: fixed; /* Fixing navbar to the top */
+    top: 0; /* Align the navbar at the top of the viewport */
+    left: 0; /* Align the navbar to the left of the viewport */
+    width: 100%; /* Ensure it stretches across the full width */
+    z-index: 1000; /* Lowered to allow other content to overlay */
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); /* Diagonal cut from right-bottom to left-bottom */
+}
+
+
+
+
+.navbar-logo img {
+    margin-top: 15px;
+    height: 150px;
+    width: auto;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    padding: 0 15px;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: rgb(48, 33, 62);
+    transition: color 0.3s;
+}
+
+.navbar-menu li a:hover {
+    color: #ff416c; /* A cool hover effect */
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none; /* Hide menu items on small screens */
+    }
+    /* Add further responsive or toggle styles here for mobile menu */
+}
+
+/* Optional: Add some top padding to the body to ensure content isn't hidden behind the navbar */
+body {
+    padding-top: 70px; /* Adjust this value based on the actual height of your navbar */
+}
+
+
+
+
+
+.prfImg{
+    height: 200px;
+    width: 200px;
+    border-radius: 35%;
+    border: 1px solid black;
+    margin-left: 15%;
+    margin-top: -15%;
+}
